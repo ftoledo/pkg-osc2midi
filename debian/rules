@@ -18,4 +18,3 @@ LDFLAGS:=$(shell dpkg-buildflags --get LDFLAGS)
 
 %:
 	dh $@ --buildsystem=cmake
-
