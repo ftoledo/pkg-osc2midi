@@ -1,0 +1,22 @@
+Source: osc2midi
+Section: sound
+Priority: optional
+Maintainer: Fernando Toledo <ragnarok@docksud.com.ar>
+Build-Depends: debhelper (>= 9), 
+    cmake (>= 3.7), 
+    libjack-jackd2-dev ( >= 1.9.10),
+    liblo-dev (>= 0.28)
+Standards-Version: 4.4.1
+Homepage: https://github.com/ssj71/OSC2MIDI
+Vcs-Git: https://github.com/ftoledo/pkg-osc2midi.git
+Vcs-Browser: https://github.com/ftoledo/pkg-osc2midi
+
+Package: osc2midi
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends},
+Suggests: qjackctl
+Description: Highly flexible and configurable OSC / JACK MIDI bridge 
+ OSC2MIDI is a highly configurable OSC to jack MIDI (and back) bridge. 
+ It was designed especially for use on Linux desktop and the open source 
+ Android app called "Control (OSC+MIDI)" but was deliberately written 
+ to be flexible enough to be used with any OSC controller or target.

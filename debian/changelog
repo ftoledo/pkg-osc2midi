@@ -1,0 +1,5 @@
+osc2midi (0.2.5-1) unstable; urgency=medium
+
+  * Initial release (Closes: #816991) 
+
+ -- Fernando Toledo <ragnarok@docksud.com.ar>  Sat, 12 Oct 2019 01:03:34 -0300

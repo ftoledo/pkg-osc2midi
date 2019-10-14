@@ -1,0 +1,41 @@
+.TH OSC2MIDI 1 "Oct, 17 2019"
+.SH NAME
+osc2midi \- Highly flexible and configurable OSC / JACK MIDI bridge.
+.SH USAGE
+
+osc2midi [-option <value>...]
+
+OPTIONS:
+    -v             verbose mode
+    -p <value>     set OSC server port
+    -m <value>     set mapping file by name or path
+    -a <value>     address of OSC client for midi->OSC, <ip:port>
+    -c <value>     set default MIDI channel
+    -vel <value>   set default MIDI note velocity
+    -s <value>     set default filter shift value
+    -multi         multi mode (check all mappings/send multiple messages)
+    -single        multi mode off (stop checks after first match)
+    -strict        strict matches (check multiple occurrences of variables)
+    -mon           only print OSC messages that come into the port
+    -o2m           only convert OSC messages to MIDI
+    -m2o           only convert MIDI messages to OSC
+    -n             dry run: check syntax of map file and exit
+    -h             show this message
+
+.SH DESCRIPTION
+By default osc2midi looks for mapping files in /usr/share/osc2midi/.
+.PP
+See default.omm in that directory on how to create your own mappings.
+.PP
+Multi mode is heavier: It finds all matches, which is useful if OSC
+messages contain more data than can be sent in a single MIDI message.
+By default multi mode is on. Pass -single to disable.
+.PP
+Strict matches make sure that multiple occurrences of a variable are all
+matched to the same value when converting an OSC or MIDI message. This
+incurs a small overhead and is disabled by default; -strict enables it.
+.SH SEE ALSO
+https://github.com/ssj71/OSC2MIDI
+.PP
+.SH AUTHOR
+This simple manual was created by Fernando Toledo <ragnarok@docksud.com.ar>
