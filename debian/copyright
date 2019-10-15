@@ -3,7 +3,7 @@ Upstream-Name: osc2midi
 Source: https://github.com/ssj71/OSC2MIDI
 
 Files: *
-Copyright: 2019 Spencer Jackson <ssjackson71@gmail>
+Copyright: 2019 Spencer Jackson <ssjackson71@gmail.com>
 License: GPL-3
 
 Files: debian/*
