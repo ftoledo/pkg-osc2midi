@@ -1,6 +1,6 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: Spencer Jackson
-Upstream-Contact: ssjackson71@gmail.com
+Upstream-Name: osc2midi
+Upstream-Contact: Spencer Jackson <ssjackson71@gmail.com>
 Source: https://github.com/ssj71/OSC2MIDI
 
 Files: *
